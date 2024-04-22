@@ -1,14 +1,14 @@
 import random
 
+# 변수 설정
 n_prisoners = 100  
 prisoners = list(range(n_prisoners))  
 boxes = []  
 failures = 0 
 attempts = 1000 
 
-
 for i in range(attempts):
-    boxes = list(prisoners)  
+    boxes = list(prisoners)
     random.shuffle(boxes)
 
     for prisoner in prisoners:  
